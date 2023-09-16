@@ -20,7 +20,7 @@ const Cart=({name,description,price,category})=>
         <>
         <button className="p-2 m-5 bg-green-100" onClick={()=>clearCartItems()}>Clear cart</button>
      <div className="flex">
-       { cartItems.map((cartItem) => <FoodInp tem {...cartItem}/>)}
+       { cartItems.map((cartItem) => <FoodItem tem {...cartItem}/>)}
      </div>
 </>
 
