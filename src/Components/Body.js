@@ -63,6 +63,7 @@ const Body=()=>
         <div className="py-5 my-5 bg-gray-50">
        <input className="mx-5 p-1"type="text"
         placeholder="Search your favourite restaurant"
+        data-testid="search-input"
         value={searchText}
         onChange={(e)=> handleChange(e)}
         />
@@ -70,6 +71,7 @@ const Body=()=>
      
 
     <button 
+    data-testid="search-btn"
     className=" rounded-md p-1 bg-blue-300  hover:bg-pink-50  font-medium"
     type="submit"
     onClick={()=> {
@@ -110,7 +112,7 @@ const Body=()=>
 
     </div>
             
-        <div className="flex m-5 pl-5 flex-wrap ">
+        <div className="flex m-5 pl-5 flex-wrap " data-testid="res-list">
 
 
             
