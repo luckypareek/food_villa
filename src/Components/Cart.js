@@ -15,6 +15,7 @@ const Cart=({name,description,price,category})=>
    {
     dispatch(clearCart())
    }
+   
 
     return(
         <>

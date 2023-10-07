@@ -17,8 +17,8 @@ const cartSlice= createSlice(
                 state.items=[]
             },
             removeItem:(state,action)=>{
-                state.items.pop()
-            }
+                 state.items=state.items.filter((item)=> item.id !== action.payload)
+               }
         }
 
     }
